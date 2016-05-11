@@ -13,3 +13,7 @@ cloudyHeadsApp.controller('ProductCtrl', function ($scope) {
 cloudyHeadsApp.controller('TeamCtrl', function ($scope) {
   console.log('Team Page Controller');
 });
+
+cloudyHeadsApp.controller('ShopCtrl', function ($scope) {
+  console.log('Shop Controller');
+});
