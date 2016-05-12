@@ -51,3 +51,7 @@ body.team #jumbotron-logo-me {
   display: none;
   margin-top: 25px;
 }
+
+#checkoutAlert {
+  display: none;
+}

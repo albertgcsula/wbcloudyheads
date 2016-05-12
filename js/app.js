@@ -12,6 +12,7 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/shop/printed', {templateUrl: 'partials/shop/printed.html', controller: 'ShopCtrl'});
   $routeProvider.when('/shop/printable', {templateUrl: 'partials/shop/printable.html', controller: 'ShopCtrl'});
   $routeProvider.when('/cart', {templateUrl: 'partials/shop/cart.html', controller: 'CartCtrl'});
+  $routeProvider.when('/checkout', {templateUrl: 'partials/shop/checkout.html', controller: 'CheckoutCtrl'});
   $routeProvider.when('/nfc/:nfcId', {templateUrl: 'partials/shop/cart.html', controller: 'NfcCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);

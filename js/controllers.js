@@ -85,6 +85,20 @@ cloudyHeadsApp.controller('CartCtrl', function ($scope) {
   if ($scope.cartItems.length > 0) {
     $('.checkout-section').show();
   }
+
+  $('#checkoutNext').on('click', function() {
+    window.location = 'http://wbcloudyheads.com/#/checkout';
+  });
+});
+
+cloudyHeadsApp.controller('CheckoutCtrl', function ($scope) {
+  $('body').addClass('cart');
+  $('#jumbotron-logo').hide();
+  $('#jumbotron-logo-me').css('display', 'block');
+
+  $('#checkoutButton').on('click', function() {
+    $('#checkoutAlert').show();
+  });
 });
 
 cloudyHeadsApp.controller('NfcCtrl', function ($scope, $routeParams, $http) {
