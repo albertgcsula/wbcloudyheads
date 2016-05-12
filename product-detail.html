@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-8">
+    <h2>{{product.title}}</h2>
+    <img src="{{product.imageUrl}}">
+    <p>{{product.description}}</p>
+  </div>
+  <div class="col-md-4 custom-options">
+    <h4>Custom Options</h4>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+        Custom option one
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Custom option two
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="customText">Custom Text (optional)</label>
+      <input type="text" class="form-control" id="customText" placeholder="Custom Text">
+    </div>
+    <input type="hidden" id="productId" value="{{product.id}}">
+    <input type="hidden" id="productTitle" value="{{product.title}}">
+    <input type="hidden" id="productDescription" value="{{product.description}}">
+    <input type="hidden" id="productImage" value="{{product.imageUrl}}">
+    <button id="addCart" type="button" class="btn btn-primary">Add to Cart</button>
+      <button id="customize" onclick="location.href = '../unity/Compiled/index.html';" type="button" class="btn btn-primary">Customize</button>
+    <div id="cartStatus" class="bg-success"></div>
+  </div>
+</div>
