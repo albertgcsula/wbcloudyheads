@@ -3,6 +3,7 @@
 var cloudyHeadsApp = angular.module('cloudyHeadsApp.controllers', []);
 
 var cartItems = [];
+var cartCount = 0;
 
 cloudyHeadsApp.controller('HomeCtrl', function ($scope) {
   $('body').addClass('home');
@@ -42,8 +43,10 @@ cloudyHeadsApp.controller('ProductDetailCtrl', function ($scope, $routeParams, $
     cartItem.imageUrl = $('#productImage').val();
 
     cartItems.push(cartItem);
+    cartCount = cartItems.length;
 
     $cartStatus.show();
+    $('#cart-amount').text(cartCount);
     $cartNav.show();
   });
 });
@@ -78,10 +81,13 @@ cloudyHeadsApp.controller('NfcCtrl', function ($scope, $routeParams, $http) {
   $http.get(jsonUrl).then(function(response) {
     $scope.product = response.data.products[$scope.nfcId];
     cartItems.push($scope.product);
+    cartCount = cartItems.length;
 
     $scope.cartItems = cartItems;
     if ($scope.cartItems.length > 0) {
       $('.checkout-section').show();
+      $('#cart-amount').text(cartCount);
+      $('#cartNav').show();
     }
   });
 });
@@ -89,7 +95,7 @@ cloudyHeadsApp.controller('NfcCtrl', function ($scope, $routeParams, $http) {
 var getJsonUrl = function () {
   var jsonUrl = "json/";
 
-  if(window.location.href.indexOf('printable') > -1) {
+  if (window.location.href.indexOf('printable') > -1) {
     jsonUrl = "json/printable-products.json";
   } else if (window.location.href.indexOf('nfc') > -1) {
     jsonUrl = "json/nfc-products.json";
