@@ -13,6 +13,11 @@ body {
   width: 400px;
 }
 
+body.home #jumbotron-logo-me,
+body.team #jumbotron-logo-me {
+  display: none;
+}
+
 .shop .thumbnail {
   margin-bottom: 0;
 }

@@ -7,14 +7,21 @@ var cartCount = 0;
 
 cloudyHeadsApp.controller('HomeCtrl', function ($scope) {
   $('body').addClass('home');
+  $('#jumbotron-logo-me').hide();
+  $('#jumbotron-logo').css('display', 'block');
 });
 
 cloudyHeadsApp.controller('ProductCtrl', function ($scope) {
   $('body').addClass('product');
+  $('#jumbotron-logo').hide();
+  $('#jumbotron-logo-me').css('display', 'block');
 });
 
 cloudyHeadsApp.controller('ProductDetailCtrl', function ($scope, $routeParams, $http) {
   $('body').addClass('product-detail');
+  $('#jumbotron-logo').hide();
+  $('#jumbotron-logo-me').css('display', 'block');
+
   $scope.productId = $routeParams.productId;
   $scope.productType = $routeParams.productType;
 
@@ -53,10 +60,14 @@ cloudyHeadsApp.controller('ProductDetailCtrl', function ($scope, $routeParams, $
 
 cloudyHeadsApp.controller('TeamCtrl', function ($scope) {
   $('body').addClass('team');
+  $('#jumbotron-logo-me').hide();
+  $('#jumbotron-logo').css('display', 'block');
 });
 
 cloudyHeadsApp.controller('ShopCtrl', function ($scope, $http) {
   $('body').addClass('shop');
+  $('#jumbotron-logo').hide();
+  $('#jumbotron-logo-me').css('display', 'block');
 
   var jsonUrl = getJsonUrl();
   $http.get(jsonUrl).then(function(response) {
@@ -66,6 +77,9 @@ cloudyHeadsApp.controller('ShopCtrl', function ($scope, $http) {
 
 cloudyHeadsApp.controller('CartCtrl', function ($scope) {
   $('body').addClass('cart');
+  $('#jumbotron-logo').hide();
+  $('#jumbotron-logo-me').css('display', 'block');
+
   $scope.cartItems = cartItems;
 
   if ($scope.cartItems.length > 0) {
@@ -75,6 +89,9 @@ cloudyHeadsApp.controller('CartCtrl', function ($scope) {
 
 cloudyHeadsApp.controller('NfcCtrl', function ($scope, $routeParams, $http) {
   $('body').addClass('cart');
+  $('#jumbotron-logo').hide();
+  $('#jumbotron-logo-me').css('display', 'block');
+
   $scope.nfcId = $routeParams.nfcId;
 
   var jsonUrl = "json/nfc-products.json";
