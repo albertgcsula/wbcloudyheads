@@ -2,11 +2,13 @@
 <p>Choose and customize products to be prepared and shipped.</p>
 
 <div class="row">
-  <div ng-repeat="product in products" class="col-xs-6 col-md-4">
-    <a href="#/product/{{product.id}}" data-product-id="{{product.id}}" class="thumbnail">
+  <div ng-repeat="product in products" class="col-xs-6 col-md-4 product-item">
+    <a href="#/product/{{product.type}}/{{product.id}}" data-product-id="{{product.id}}" data-product-type="{{product.type}}" class="thumbnail">
       <img src="{{product.imageUrl}}">
     </a>
-    <a href="#/product/{{product.id}}" data-product-id="{{product.id}}"><h4>{{product.title}}</h4></a>
+    <a href="#/product/{{product.type}}/{{product.id}}" data-product-id="{{product.id}}" data-product-type="{{product.type}}">
+      <h4>{{product.title}}</h4>
+    </a>
     <p><small>{{product.description}}</small></p>
   </div>
 </div>

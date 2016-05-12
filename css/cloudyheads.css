@@ -5,14 +5,40 @@ body {
   padding-top: 70px;
 }
 
+#cartNav {
+  display: none;
+}
+
 #jumbotron-logo {
   width: 400px;
 }
 
 .shop .thumbnail {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .shop h4 {
   margin-bottom: 4px;
+}
+
+.shop .product-item {
+  display: inline-block;
+  min-height: 340px;
+}
+
+.product-detail #cartStatus {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cart .media-object {
+  width: 75px;
+}
+
+.cart .checkout-section {
+  display: none;
+  margin-top: 25px;
 }

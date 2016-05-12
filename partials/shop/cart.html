@@ -1,0 +1,24 @@
+<h2>Shopping Cart</h2>
+
+<div ng-repeat="item in cartItems" class="media">
+  <div class="media-left">
+    <a href="#/product/{{item.id}}">
+      <img class="media-object" src="{{item.imageUrl}}">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{item.title}}</h4>
+    {{item.description}}
+  </div>
+</div>
+
+<div class="checkout-section">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Checkout</button>
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <h1 class="text-center">Thank You!</h1>
+        </div>
+    </div>
+  </div>
+</div>

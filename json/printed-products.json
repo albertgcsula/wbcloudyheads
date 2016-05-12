@@ -2,45 +2,51 @@
   "products": [
     {
       "id": "0",
-      "title": "Bat Badge 0",
-      "description": "Customizable bat logo",
-      "imageUrl": "img/shop/bat-stl.jpg",
-      "stlUrl": ""
+      "title": "Female Warrior Object",
+      "description": "3D printed female warrior. Printed with Acrylonitrile Butadiene Styrene (ABS) thermoplastic.",
+      "imageUrl": "img/shop/female-warrior.jpg",
+      "stlUrl": "",
+      "type": "printed"
     },
     {
       "id": "1",
-      "title": "Bat Badge 1",
-      "description": "Customizable bat logo",
-      "imageUrl": "img/shop/bat-stl.jpg",
-      "stlUrl": ""
+      "title": "Male Warrior Object",
+      "description": "3D printed male warrior. Printed with Acrylonitrile Butadiene Styrene (ABS) thermoplastic.",
+      "imageUrl": "img/shop/male-warrior.jpg",
+      "stlUrl": "",
+      "type": "printed"
     },
     {
       "id": "2",
-      "title": "Bat Badge 2",
-      "description": "Customizable bat logo",
-      "imageUrl": "img/shop/bat-stl.jpg",
-      "stlUrl": ""
+      "title": "Elder Wand Object",
+      "description": "3D printed elder wand. Printed with Acrylonitrile Butadiene Styrene (ABS) thermoplastic.",
+      "imageUrl": "img/shop/elder-wand.jpg",
+      "stlUrl": "",
+      "type": "printed"
     },
     {
       "id": "3",
-      "title": "Bat Badge 3",
-      "description": "Customizable bat logo",
-      "imageUrl": "img/shop/bat-stl.jpg",
-      "stlUrl": ""
+      "title": "Stark Crest Object",
+      "description": "3D printed Game of Thrones Stark Crest. Printed with Acrylonitrile Butadiene Styrene (ABS) thermoplastic.",
+      "imageUrl": "img/shop/stark-crest.jpg",
+      "stlUrl": "",
+      "type": "printed"
     },
     {
       "id": "4",
-      "title": "Bat Badge 4",
-      "description": "Customizable bat logo",
-      "imageUrl": "img/shop/bat-stl.jpg",
-      "stlUrl": ""
+      "title": "Crown Object",
+      "description": "3D printed Game of Thrones Crown. Printed with Acrylonitrile Butadiene Styrene (ABS) thermoplastic.",
+      "imageUrl": "img/shop/crown.jpg",
+      "stlUrl": "",
+      "type": "printed"
     },
     {
       "id": "5",
-      "title": "Bat Badge 5",
-      "description": "Customizable bat logo",
-      "imageUrl": "img/shop/bat-stl.jpg",
-      "stlUrl": ""
+      "title": "Throne Object",
+      "description": "3D printed Game of Thrones throne. Printed with Acrylonitrile Butadiene Styrene (ABS) thermoplastic.",
+      "imageUrl": "img/shop/throne.jpg",
+      "stlUrl": "",
+      "type": "printed"
     }
   ]
 }
