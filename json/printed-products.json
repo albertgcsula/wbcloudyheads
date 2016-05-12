@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "title": "Bat Badge 0",
+      "description": "Customizable bat logo",
+      "imageUrl": "img/shop/bat-stl.jpg",
+      "stlUrl": ""
+    },
+    {
+      "id": "1",
+      "title": "Bat Badge 1",
+      "description": "Customizable bat logo",
+      "imageUrl": "img/shop/bat-stl.jpg",
+      "stlUrl": ""
+    },
+    {
+      "id": "2",
+      "title": "Bat Badge 2",
+      "description": "Customizable bat logo",
+      "imageUrl": "img/shop/bat-stl.jpg",
+      "stlUrl": ""
+    },
+    {
+      "id": "3",
+      "title": "Bat Badge 3",
+      "description": "Customizable bat logo",
+      "imageUrl": "img/shop/bat-stl.jpg",
+      "stlUrl": ""
+    },
+    {
+      "id": "4",
+      "title": "Bat Badge 4",
+      "description": "Customizable bat logo",
+      "imageUrl": "img/shop/bat-stl.jpg",
+      "stlUrl": ""
+    },
+    {
+      "id": "5",
+      "title": "Bat Badge 5",
+      "description": "Customizable bat logo",
+      "imageUrl": "img/shop/bat-stl.jpg",
+      "stlUrl": ""
+    }
+  ]
+}
