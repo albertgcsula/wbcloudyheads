@@ -70,11 +70,29 @@ cloudyHeadsApp.controller('CartCtrl', function ($scope) {
   }
 });
 
+cloudyHeadsApp.controller('NfcCtrl', function ($scope, $routeParams, $http) {
+  $('body').addClass('cart');
+  $scope.nfcId = $routeParams.nfcId;
+
+  var jsonUrl = "json/nfc-products.json";
+  $http.get(jsonUrl).then(function(response) {
+    $scope.product = response.data.products[$scope.nfcId];
+    cartItems.push($scope.product);
+
+    $scope.cartItems = cartItems;
+    if ($scope.cartItems.length > 0) {
+      $('.checkout-section').show();
+    }
+  });
+});
+
 var getJsonUrl = function () {
   var jsonUrl = "json/";
 
   if(window.location.href.indexOf('printable') > -1) {
     jsonUrl = "json/printable-products.json";
+  } else if (window.location.href.indexOf('nfc') > -1) {
+    jsonUrl = "json/nfc-products.json";
   } else {
     jsonUrl = "json/printed-products.json";
   }

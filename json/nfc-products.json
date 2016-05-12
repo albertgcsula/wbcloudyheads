@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "title": "Ellen Hidden Set Product",
+      "description": "Unlocked customizable Ellen name badge.",
+      "imageUrl": "img/shop/ellen-badge.jpg",
+      "stlUrl": "",
+      "type": "nfc"
+    },
+    {
+      "id": "1",
+      "title": "Harry Potter Hidden Product",
+      "description": "Unlocked customizable Harry Potter Wand product.",
+      "imageUrl": "img/shop/elder-wand.jpg",
+      "stlUrl": "",
+      "type": "nfc"
+    },
+    {
+      "id": "2",
+      "title": "Water Tower Hidden Product",
+      "description": "Unlocked customizable Water Tower Product.",
+      "imageUrl": "img/shop/water-tower.jpg",
+      "stlUrl": "",
+      "type": "nfc"
+    },
+    {
+      "id": "3",
+      "title": "Friends Set Hidden Product",
+      "description": "Unlocked customizable Friends Product.",
+      "imageUrl": "img/shop/throne.jpg",
+      "stlUrl": "",
+      "type": "nfc"
+    },
+    {
+      "id": "4",
+      "title": "Two and a Half Men Set Hidden Product",
+      "description": "Unlocked customizable Two and a Half Men Product.",
+      "imageUrl": "img/shop/stark-crest.jpg",
+      "stlUrl": "",
+      "type": "nfc"
+    },
+    {
+      "id": "5",
+      "title": "Two Broke Girls Hidden Product",
+      "description": "Unlocked customizable Two Broke Girls product.",
+      "imageUrl": "img/shop/female-warrior.jpg",
+      "stlUrl": "",
+      "type": "nfc"
+    }
+  ]
+}

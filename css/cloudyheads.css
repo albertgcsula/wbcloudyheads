@@ -26,6 +26,10 @@ body {
   min-height: 340px;
 }
 
+.product-detail .custom-options {
+  margin-top: 15px;
+}
+
 .product-detail #cartStatus {
   display: none;
   margin-top: 10px;
