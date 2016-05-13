@@ -48,6 +48,7 @@ cloudyHeadsApp.controller('ProductDetailCtrl', function ($scope, $routeParams, $
     cartItem.title = $('#productTitle').val();
     cartItem.description = $('#productDescription').val();
     cartItem.imageUrl = $('#productImage').val();
+    cartItem.type = $('#productType').val();
 
     cartItems.push(cartItem);
     cartCount = cartItems.length;
